@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/css/ionic.bundle.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  
+  <link rel="stylesheet" href="Onsidebar.css">
+  <script src="Onscript.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/css/ionic.bundle.css"/>
+  <link rel="stylesheet" href="my.css"/>
+  <style>
+    :root {
+      --ion-safe-area-top: 20px;
+      --ion-safe-area-bottom: 22px;
+    }
+    .swiper-slide {
+      display: block;
+    }
+    ion-slide > h2 {
+      margin-top: 2.8rem;
+    }
+    ion-slide > img {
+      max-height: 50%;
+      max-width: 60%;
+      margin: 36px 0;
+    }
+    header {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25em;
+      text-transform: uppercase;
+    }
+    section {
+      margin-top: 1em;
+      margin-bottom: 2.5em;
+    }
+  
+  </style>
+	
+
+
+
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  
+</head>
+
+<body>
+  <app-root></app-root>
+  <ons-splitter>
+    <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+      <ons-page> 
+          <ion-header>
+              <ion-toolbar translucent>
+                
+                <ion-title>                  
+                  <center><ion-icon name="home"></ion-icon><h3>Menu</h3></center></ion-title>
+                   </ion-toolbar>
+            </ion-header>
+           
+        <ons-list>
+          <ons-list-item onclick="fn.load('home.html')" tappable>
+            Home
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('settings.html')" tappable>
+           Explore
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('about.html')" tappable>
+            Transportation
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('Guide.html')" tappable>
+            Guide
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('Chat-Bot.html')" tappable>
+            Chat-Bot
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('Street-Delights.html')" tappable>
+            Street-Delights
+          </ons-list-item>
+         
+          <ons-list-item onclick="fn.load('Night-Life.html')" tappable>
+           Night-Life
+          </ons-list-item>
+        </ons-list>
+      </ons-page>
+    </ons-splitter-side>
+    <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+  </ons-splitter>
+  
+  <template id="home.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+         Places
+        </div>
+      </ons-toolbar>
+       <ion-app>
+          <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+              <ion-fab-button color="danger">
+                <ion-icon name="add"></ion-icon>
+              </ion-fab-button>
+            </ion-fab>
+          <ion-content fullscreen>
+              <ion-card>
+                <img src="images\amer.jpg" />
+                <ion-card-header>
+                  <ion-card-subtitle></ion-card-subtitle>
+                  <ion-card-title><center>Amer</center></ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    Amer, now a part of the Jaipur Municipal Corporation, was a city of the Rajasthan state, India.
+                   The picturesque situation of Amer at the mouth of a rocky mountain gorge, in which nestles a lake, has attracted the admiration of travellers, including Victor Jacquemont and Reginald Heber.It is seen to be a remarkable example for its combined Rajput-Mughal architecture. The Amer Fort, a UNESCO World Heritage Site, is the top tourist attraction in the Jaipur area. 
+                </ion-card-content>
+              </ion-card>
+              <ion-card>
+                  <img src="images\hawamahal.jpg" />
+                  <ion-card-header>
+                    <ion-card-subtitle></ion-card-subtitle>
+                    <ion-card-title><center>Hawa Mahal</center></ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                      Hawa Mahal is a palace in Jaipur, India. Made with the red and pink sandstone, the palace sits on the edge of the City Palace, Jaipur, and extends to the Zenana, or women's chambers. The structure was built in 1799 by Maharaja Sawai Pratap Singh, the grandson of Maharaja Sawai Jai Singh, who was the founder of Jaipur.
+                  </ion-card-content>
+                </ion-card>
+
+                <ion-card>
+                    <img src="images\jalmahal.jpg" />
+                    <ion-card-header>
+                      <ion-card-subtitle></ion-card-subtitle>
+                      <ion-card-title><center>Jal Mahal</center></ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        al Mahal is a palace in the middle of the Man Sagar Lake in Jaipur city, the capital of the state of Rajasthan, India. The palace and the lake around it were renovated and enlarged in the 18th century by Maharaja Jai Singh II of Amber.
+                    </ion-card-content>
+                  </ion-card>
+
+                  <ion-card>
+                      <img src="images\nahargarh.jpg" />
+                      <ion-card-header>
+                        <ion-card-subtitle></ion-card-subtitle>
+                        <ion-card-title><ion-card-title><center>Nahargarh</center></ion-card-title>
+                      </ion-card-header>
+                      <ion-card-content>
+                          Nahargarh Fort stands on the edge of the Aravalli Hills, overlooking the city of Jaipur in the Indian state of Rajasthan. Along with Amer Fort and Jaigarh Fort, Nahargarh once formed a strong defense ring for the city.
+                      </ion-card-content>
+                    </ion-card>
+
+                    <ion-card>
+                        <img src="images\jaigarh.jpg" />
+                        <ion-card-header>
+                          <ion-card-subtitle></ion-card-subtitle>
+                          <ion-card-title><center>Jai-garh</center></ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content>
+                            Jaigarh Fort is situated on the promontory called the Cheel ka Teela of the Aravalli range; it overlooks the Amer Fort and the Maota Lake, near Amer in Jaipur, Rajasthan, India. The fort was built by Jai Singh II in 1726 to protect the Amer Fort and its palace complex and was named after him.
+                        </ion-card-content>
+                      </ion-card>
+
+                      <ion-card>
+                          <img src="images\alberthall.jpg" />
+                          <ion-card-header>
+                            <ion-card-subtitle></ion-card-subtitle>
+                            <ion-card-title><center>Albert-Hall</center></ion-card-title>
+                          </ion-card-header>
+                          <ion-card-content>
+                              Albert Hall Museum is located in Rajasthan, India. It is the oldest museum of the state and functions as the state museum of Rajasthan. The building is situated in Ram Niwas garden outside the city wall opposite New gate and is a fine example of Indo-Saracenic architecture.  
+                          </ion-card-content>
+                        </ion-card>
+
+                        <ion-card>
+                            <img src="images\jantarmantar.jpg" />
+                            <ion-card-header>
+                              <ion-card-subtitle></ion-card-subtitle>
+                              <ion-card-title><center>Jantar-Mantar</center></ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content>
+                                The Jantar Mantar is a collection of nineteen architectural astronomical instruments built by the Meena king Sawai Jai Singh II, the founder of Jaipur, Rajasthan. The monument was completed in 1734. It features the world's largest stone sundial, and is a UNESCO World Heritage site.
+                            </ion-card-content>
+                          </ion-card>
+
+                          <ion-card>
+                              <img src="images\citypalace.jpg" />
+                              <ion-card-header>
+                                <ion-card-subtitle></ion-card-subtitle>
+                                <ion-card-title><center>City Palace</center></ion-card-title>
+                              </ion-card-header>
+                              <ion-card-content>
+                                  The City Palace, Jaipur was established at the same time as the city of Jaipur, by Maharaja Sawai Jai Singh II, who moved his court to Jaipur from Amber, in 1727.  
+                              </ion-card-content>
+                            </ion-card>
+
+                            <ion-card>
+                                <img src="images\birlamandir.jpg" />
+                                <ion-card-header>
+                                  <ion-card-subtitle></ion-card-subtitle>
+                                  <ion-card-title><center>Birla-Mandir</center></ion-card-title>
+                                </ion-card-header>
+                                <ion-card-content>
+                                    Birla Mandir, Jaipur is a Hindu temple located in Jaipur, India and is part of one of the several Birla mandirs located all around the country. The grand temple is located on an elevated ground at the base of Moti Dungari hill in Rajasthan. The temple is sometimes also referred to as the Laxmi Narayan Temple.
+                                </ion-card-content>
+                              </ion-card>
+
+                              <img src="images\galtaji.jpg" />
+                              <ion-card-header>
+                                <ion-card-subtitle></ion-card-subtitle>
+                                <ion-card-title><center>Galtaji</center></ion-card-title>
+                              </ion-card-header>
+                              <ion-card-content>
+                                  Galtaji is an ancient Hindu pilgrimage about 10 km away from Jaipur, in the Indian state of Rajasthan. The site consists of a series of temples built into a narrow crevice in the ring of hills that surrounds Jaipur.
+                              </ion-card-content>
+                            </ion-card>
+            </ion-content>
+        
+       </ion-app>
+    </ons-page>
+  </template>
+  
+  <template id="settings.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Explore-Event
+        </div>
+      </ons-toolbar>
+
+      <ion-tabs>
+              
+          <ion-tab tab="music">
+            <ion-header translucent>
+              <ion-toolbar>
+                  <center><ion-icon name="microphone"></ion-icon></center>
+                <ion-title><center>Music</center></ion-title>
+              </ion-toolbar>
+            </ion-header>
+             
+
+            <ion-content fullscreen>
+                <ion-list>
+                  <ion-item>
+                    <ion-avatar slot="start">
+                      <img src="images/m1.webp">
+                    </ion-avatar>
+                    <ion-label>
+                      <h4>Supermoon ft. PRatingek Kuhad Winter Tour 2019 - Jaipur</h4>
+                    
+                      <p>Sun, 8 – 9 pm
+                          Nirmala Auditorium, Sector 17, Pratap Nagar
+                          Jaipur, Rajasthan</p>
+                    </ion-label>
+                  </ion-item>
+          
+                  <ion-item>
+                    <ion-avatar slot="start">
+                      <img src="images/m2.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                      <h4>Gaana Crossblade Music Festival</h4>
+                      
+                      <p>Sat, 19 – Sun, 20 Oct
+                          JECC, RIICO Industrial Area, Sitapura, Sanganer
+                          Jaipur, Rajasthan</p>
+                    </ion-label>
+                  </ion-item>
+          
+                  <ion-item>
+                    <ion-avatar slot="start">
+                      <img src="images/m3.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                      <h4>Dunes Music Festival 2019</h4>
+                     
+                      <p>Sat, 4 – 10 pm
+                          Jaipur
+                          Jaipur, Rajasthan</p>
+                    </ion-label>
+                  </ion-item>
+          
+                  <ion-item>
+                    <ion-avatar slot="start">
+                      <img src="images/m4.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                      <h4>TaBlu Music Fest Powered by Dig-a-gig</h4>
+                     
+                      <p>Fri, 11 – Sat, 12 Oct
+                          Hotel Clarks Amer, Jaipur, Jawahar Lal Nehru Marg, Lal Bahadur Nagar, Chandrakala Colony, Near
+                          Jaipur, Rajasthan</p>
+                    </ion-label>
+                  </ion-item>
+                  <ion-item>
+                      <ion-avatar slot="start">
+                        <img src="images/m5.jpg">
+                      </ion-avatar>
+                      <ion-label>
+                        <h4>LIVE MUSIC PERFORMANCE BY AMIT RAIIg</h4>
+                       
+                        <p>Today, 8:00 – 10:30 pm
+                            Beerlicious, 34/35, Mahalaxmi Tower, 9th Floor, Calgiri Road, Mojo Colony, Malviya Nagar
+                            Jaipur, Rajasthan</p>
+                      </ion-label>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-avatar slot="start">
+                          <img src="images/m6.jpg">
+                        </ion-avatar>
+                        <ion-label>
+                          <h4>The Golden Days Club</h4>
+                         
+                          <p>19 – 30 Sep
+                              OYO 29677 Hotel Golden Days Club Resort, Hanuman vatika, 1st, 200 Feet Bypass Rd, Rajni Vihar, Heerawala
+                              Jaipur, Rajasthan</p>
+                        </ion-label>
+                      </ion-item>
+
+                      <ion-item>
+                          <ion-avatar slot="start">
+                            <img src="images/m7.jpg">
+                          </ion-avatar>
+                          <ion-label>
+                            <h4>PARMISH VERMA PERFORMING LIVE</h4>
+                           
+                            <p>Mon, 7 – 11 pm
+                                Hotel Fairmont Jaipur, 2 Riico
+                                Kukas, Rajasthan</p>
+                          </ion-label>
+                        </ion-item>
+                </ion-list>
+          
+         
+          
+                  
+                 
+             
+              </ion-content>
+          
+          </ion-tab>
+    
+          <ion-tab tab="movies">
+            <ion-header translucent>
+              <ion-toolbar>
+                  <center><ion-icon name="contacts"></ion-icon></center>
+                <ion-title><center>Cultural</center></ion-title>
+              </ion-toolbar>
+            </ion-header>
+    
+
+            <ion-content fullscreen>
+                <ion-list>
+                  <ion-item>
+                    <ion-avatar slot="start">
+                      <img src="images/c1.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                      <h4>Jaipur Literature Festival</h4>
+                    
+                      <p>23 – 27 Jan 2020
+                          Jaipur
+                          Jaipur, Rajasthan</p>
+                    </ion-label>
+                  </ion-item>
+          
+                  <ion-item>
+                    <ion-avatar slot="start">
+                      <img src="images/c2.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                      <h4>Rajasthan cultural marathon</h4>
+                      
+                      <p>Sunday
+                          Jaipur
+                          Jaipur, Rajasthan</p>
+                    </ion-label>
+                  </ion-item>
+          
+                  <ion-item>
+                    <ion-avatar slot="start">
+                      <img src="images/c3.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                      <h4>Rajasthan cultural marathon</h4>
+                     
+                      <p>Sun, 5:30 – 8:30 am
+                          National Handloom Corporation, Near Nursery Circle, Nemi Nagar Extension, Block A, Vaishali Nagar
+                          Jaipur, Rajasthan</p>
+                    </ion-label>
+                  </ion-item>
+          
+                  <ion-item>
+                    <ion-avatar slot="start">
+                      <img src="images/c4.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                      <h4>Evening Navaratri Celebration in Jaipur</h4>
+                     
+                      <p>29 Oct – 7 Nov
+                          Jaipur
+                          Jaipur, Rajasthan</p>
+                    </ion-label>
+                  </ion-item>
+                  <ion-item>
+                      <ion-avatar slot="start">
+                        <img src="images/c5.jpg">
+                      </ion-avatar>
+                      <ion-label>
+                        <h4>Jaipur Youth Festival 2019</h4>
+                       
+                        <p>Sat, 5 – Mon, 7 Oct
+                            Tamra Garden, 2, Tonk Rd, Chandrakala Colony, Durgapura
+                            Jaipur, Rajasthan</p>
+                      </ion-label>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-avatar slot="start">
+                          <img src="images/c6.jpg">
+                        </ion-avatar>
+                        <ion-label>
+                          <h4>Rajasthan Film Festival</h4>
+                         
+                          <p>Thu, 26 – Sat, 28 Sep
+                              Maan Palace, Gandhi Path West, Vaishali Nagar
+                              Jaipur, Rajasthan</p>
+                        </ion-label>
+                      </ion-item>
+
+                      <ion-item>
+                          <ion-avatar slot="start">
+                            <img src="images/c7.jpg">
+                          </ion-avatar>
+                          <ion-label>
+                            <h4>Gangaur Festival Rajasthan India</h4>
+                           
+                            <p>10 – 27 Mar 2020
+                                Jaipur
+                                Jaipur, Rajasthan</p>
+                          </ion-label>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-avatar slot="start">
+                              <img src="images/c8.jpg">
+                            </ion-avatar>
+                            <ion-label>
+                              <h4>International Kite Festival, Jaipur</h4>
+                             
+                              <p>14 – 16 Jan 2020
+                                  Jaipur
+                                  Jaipur, Rajasthan</p>
+                            </ion-label>
+                          </ion-item>
+                </ion-list>
+          
+         
+          
+                  
+                 
+             
+              </ion-content>
+          
+          </ion-tab>
+    
+         
+          <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="music">
+              <ion-label>Music</ion-label>
+              <ion-icon name="musical-note"></ion-icon>
+            </ion-tab-button>
+            <ion-tab-button tab="movies">
+              <ion-label>Cultural</ion-label>
+              <ion-icon name="globe"></ion-icon>
+            </ion-tab-button>
+            
+          </ion-tab-bar>
+        </ion-tabs>
+    </ons-page>
+  </template>
+  
+  <template id="about.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Transportation
+        </div>
+      </ons-toolbar>
+     
+      <ion-app>
+        
+          <ion-content fullscreen padding scroll-y="false">
+            <p align=right>Swipe-Left<ion-icon name="arrow-forward"></ion-icon></p>
+              <ion-slides>
+                    
+                  <ion-slide>
+                    
+                    <ion-header>
+                        <ion-icon name="train"></ion-icon>
+                    <h3>Railway</h3>
+                  </ion-header>
+                  <ion-list>
+                      <ion-item>
+                          <ion-label>Journey Date</ion-label>
+                          <ion-datetime value="1990-02-19" placeholder="Select Date"></ion-datetime>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label position="stacked"><h2>From</h2> <ion-text color="danger"></ion-text></ion-label>
+                            <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+                          </ion-item>
+                
+                          <ion-item>
+                              <ion-label position="stacked"><h2>To</h2><ion-text color="danger"></ion-text></ion-label>
+                              <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+                            </ion-item>
+                             
+                            <section>
+                                <ion-button expand="block"><b>BOOK NOW</b></ion-button>
+                              </section>
+                            
+                  </ion-list>
+                              </ion-slide>
+
+                              <ion-slide>
+                             
+                                
+                                  
+                                    <ion-toolbar>
+                                  <h3>Self-Travel</h3>
+                                </ion-toolbar>
+                             
+                                <ion-toolbar>
+                                <ion-label>Journey Date</ion-label>
+                                        <ion-datetime value="1990-02-19" placeholder="Select Date"></ion-datetime>
+
+                              </ion-label>
+                            </ion-toolbar>
+                              
+                                      <ion-card>
+                                          <img src="images\t1.jpg" />
+                                          <ion-card-header>
+                                            <ion-card-subtitle></ion-card-subtitle>
+                                            <ion-card-title>Name - FlyBaxy</ion-card-title>
+                                          </ion-card-header>
+                                          <ion-card-content>
+                                              Contact - +918965423567<br>
+                                              Email - flybaxy@gmail.com
+                                          </ion-card-content>
+                                        </ion-card>
+                                        <section>
+                                            <ion-button expand="block"><b>BOOK NOW</b></ion-button>
+                                          </section>
+                                        <ion-card>
+                                            <img src="images\t2.jpg" />
+                                            <ion-card-header>
+                                              <ion-card-subtitle></ion-card-subtitle>
+                                              <ion-card-title>Name - ZoomCar</ion-card-title>
+                                            </ion-card-header>
+                                            <ion-card-content>
+                                                Contact - +915634978526<br>
+                                                Email - zoomcar@gmail.com
+                                            </ion-card-content>
+                                          </ion-card>
+                                          <section>
+                                              <ion-button expand="block"><b>BOOK NOW</b></ion-button>
+                                            </section>
+                                          <ion-card>
+                                              <img src="images\t3.webp" />
+                                              <ion-card-header>
+                                                <ion-card-subtitle></ion-card-subtitle>
+                                                <ion-card-title>Name - BikeRent</ion-card-title>
+                                              </ion-card-header>
+                                              <ion-card-content>
+                                                  Contact - +918654952356<br>
+                                                  Email - bikerent@gmail.com
+                                              </ion-card-content>
+                                            </ion-card>
+                                           
+                                          <section>
+                                              <ion-button expand="block"><b>BOOK NOW</b></ion-button>
+                                            </section>
+                                         
+                                        
+                              </ion-slide>
+                  <ion-slide>
+                    
+                      
+                          <ion-header>
+                          <h3>Taxi-Travel</h3>
+                        </ion-header>
+                        <ion-list>
+                            <ion-item>
+                                <ion-label>Journey Date</ion-label>
+                                <ion-datetime value="1990-02-19" placeholder="Select Date"></ion-datetime>
+                              </ion-item>
+                              <ion-item>
+                                  <ion-label position="stacked"><h2>From</h2> <ion-text color="danger"></ion-text></ion-label>
+                                  <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+                                </ion-item>
+                      
+                                <ion-item>
+                                    <ion-label position="stacked"><h2>To</h2><ion-text color="danger"></ion-text></ion-label>
+                                    <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+                                  </ion-item>
+                                   
+                                  <section>
+                                      <ion-button expand="block"><b>BOOK-TAXI</b></ion-button>
+                                    </section>
+                                  
+                        </ion-list>
+                           </ion-slide>
+                          
+                 
+          
+                </ion-slides>
+            </ion-content>
+          </ion-app>
+        
+
+    </ons-page>
+  </template>
+
+  <template id="Guide.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Guide
+        </div>
+      </ons-toolbar>
+      <ion-app>
+      <ion-content fullscreen padding scroll-y="false">
+          <ion-slides>
+    
+            <ion-slide>
+                 <ion-header>
+                <ion-title><h3><ion-icon name="man"></ion-icon>Historical-Guide</ion-icon></h3></ion-title>
+                </ion-header>
+                <ion-item>
+                    <ion-avatar slot="start">
+                      <img src="images\g1.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                      <h4>Aditya Singh</h4>
+                      <h5>Rating - 3.2/5</h5>
+                      <p>Contact - +919658423765</p>
+                    </ion-label>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-avatar slot="start">
+                      <img src="images\g2.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                      <h4>Atul bhardwaj</h4>
+                      <h5>Rating - 4.3/5</h5>
+                      <p>Contact - +919648423765</p>
+                    </ion-label>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-avatar slot="start">
+                      <img src="images\g3.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                      <h4>Nikumbh Singh</h4>
+                      <h5>Rating - 4/5</h5>
+                      <p>Contact - +918848423765</p>
+                    </ion-label>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-avatar slot="start">
+                      <img src="images\g4.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                      <h4>Arpit Sharma</h4>
+                      <h5>Rating - 2.8/5</h5>
+                      <p>Contact - +918998423779</p>
+                    </ion-label>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-avatar slot="start">
+                      <img src="images\g5.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                      <h4>Devesh Goswami</h4>
+                      <h5>Rating - 4.8/5</h5>
+                      <p>Contact - +918848423569</p>
+                    </ion-label>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-avatar slot="start">
+                      <img src="images\g6.jpg">
+                    </ion-avatar>
+                    <ion-label>
+                      <h4>Puneet morey</h4>
+                      <h5>Rating - 1.6/5</h5>
+                      <p>Contact - +918948423762</p>
+                    </ion-label>
+                  </ion-item>
+
+                 
+            </ion-slide>
+    
+            <ion-slide>
+              <ion-header>
+              <ion-title><h3><ion-icon name="man"></ion-icon>Local-Guide</h3></ion-title></ion-header>
+              <ion-item>
+                <ion-avatar slot="start">
+                  <img src="images\l1.jpg">
+                </ion-avatar>
+                <ion-label>
+                  <h4>Shivam rajput</h4>
+                  <h5>Rating - 4.6/5</h5>
+                  <p>Contact - +918948423123</p>
+                </ion-label>
+              </ion-item>
+
+              <ion-item>
+                <ion-avatar slot="start">
+                  <img src="images\l2.jpg">
+                </ion-avatar>
+                <ion-label>
+                  <h4>Anikesh gupta</h4>
+                  <h5>Rating - 4.9/5</h5>
+                  <p>Contact - +917798423146</p>
+                </ion-label>
+              </ion-item>
+
+              <ion-item>
+                <ion-avatar slot="start">
+                  <img src="images\l3.jpg">
+                </ion-avatar>
+                <ion-label>
+                  <h4>Pranav Kumar</h4>
+                  <h5>Rating - 2.8/5</h5>
+                  <p>Contact - +917988423123</p>
+                </ion-label>
+              </ion-item>
+
+              <ion-item>
+                <ion-avatar slot="start">
+                  <img src="images\l4.jpg">
+                </ion-avatar>
+                <ion-label>
+                  <h4>Mayank Rajput</h4>
+                  <h5>Rating - 4.6/5</h5>
+                  <p>Contact - +917985423465</p>
+                </ion-label>
+              </ion-item>
+
+              <ion-item>
+                <ion-avatar slot="start">
+                  <img src="images\l5.jpg">
+                </ion-avatar>
+                <ion-label>
+                  <h4>Jai-Prakash</h4>
+                  <h5>Rating - 4.8/5</h5>
+                  <p>Contact - +918965429785</p>
+                </ion-label>
+              </ion-item>
+
+              <ion-item>
+                <ion-avatar slot="start">
+                  <img src="images\l6.jpg">
+                </ion-avatar>
+                <ion-label>
+                  <h4>Sakunjay vyas</h4>
+                  <h5>Rating - 2.9/5</h5>
+                  <p>Contact - +917682365479</p>
+                </ion-label>
+              </ion-item>
+            </ion-slide>
+    
+          </ion-slides>
+        </ion-content>
+      </ion-app>
+    </ons-page>
+  </template>
+
+  <template id="Chat-Bot.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+         Chat-Bot
+        </div>
+      </ons-toolbar>
+      <bot>
+        <center><iframe src="trojanBot/demo/trojanBot.html" height="700" width="400"></iframe></center>
+    
+      </bot>
+    </ons-page>
+  </template>
+
+  <template id="Street-Delights.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Street-Delights
+        </div>
+      </ons-toolbar>
+      <ion-card>
+        <map><iframe src="map/map.html" height="700" width="400""></iframe></map> 
+      </ion-card>
+    </ons-page>
+  </template>
+
+
+
+  <template id="Night-Life.html">
+    <ons-page>
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          Night-Life
+        </div>
+      </ons-toolbar>
+      <ion-card>
+        <img src="images\amar.jpg" />
+        <ion-card-header>
+          <ion-card-subtitle></ion-card-subtitle>
+          <ion-card-title><center><h3>Amar-Jawan-Jyoti</h3></center></ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <img src="images\albert.jpg" />
+        <ion-card-header>
+          <ion-card-subtitle></ion-card-subtitle>
+          <ion-card-title><center><h3>Albert-Hall</h3></center></ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <img src="images\sunset.jpg" />
+        <ion-card-header>
+          <ion-card-subtitle></ion-card-subtitle>
+          <ion-card-title><center><h3>Nahargarh-Fort</h3></center></ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <img src="images\gt.jpg" />
+        <ion-card-header>
+          <ion-card-subtitle></ion-card-subtitle>
+          <ion-card-title><center><h3>Gaurav Tower</h3></center></ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <img src="images\amerNight.jpg" />
+        <ion-card-header>
+          <ion-card-subtitle></ion-card-subtitle>
+          <ion-card-title><center><h3>Amer Fort</h3></center></ion-card-title>
+        </ion-card-header>
+      </ion-card>
+      
+    </ons-page>
+  </template>
+</body>
+
+</html>

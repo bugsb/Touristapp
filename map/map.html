@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>My first map</title>
+     <script src="https://apis.mapmyindia.com/advancedmaps/v1/776mmybkwtk1j6qzvdxr5t7o5rdxxl44/map_load?v=01."></script>
+    <style>
+         #firstmap{
+             margin-left: 20px;
+             margin-top: 100px;
+             padding: 0;
+             width: 700px;
+             height: 400px;
+        } 
+        </style>    
+    </head>
+<body>
+   
+        <div id='firstmap'></div>
+    <script>
+        var map=new MapmyIndia.Map("firstmap",{ center:[26.9124, 75.7873],zoomControl: true,hybrid:true });
+        L.marker([26.9239363, 75.8245551]).addTo(map).bindPopup("HawaMahal");
+        L.marker([26.9850877, 75.8434041]).addTo(map).bindPopup("Jaigarh Fort");
+        L.marker([26.9853355, 75.8482624]).addTo(map).bindPopup("Amer Fort");
+        L.marker([26.8921959, 75.8153921]).addTo(map).bindPopup("Birla Mandir");
+        L.marker([26.9116042, 75.8184146]).addTo(map).bindPopup("Albert Hall Museum");
+        L.marker([26.9257713, 75.8214694]).addTo(map).bindPopup("City Palace");
+        L.marker([26.9229279, 75.8245241]).addTo(map).bindPopup("Badi Choupad");
+        L.marker([26.8981053, 75.8059611]).addTo(map).bindPopup("RamBagh Palace");
+        L.marker([26.9673685, 75.8466804]).addTo(map).bindPopup("Kanak Ghati Garden");
+        L.marker([26.9121335, 75.7829819]).addTo(map).bindPopup("Jal Mahal");
+        L.marker([26.9373127, 75.8133372]).addTo(map).bindPopup("Nahargarh Fort");
+       
+        
+ 
+</script>
+    </body>
+    </html>
